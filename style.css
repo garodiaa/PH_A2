@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root{
+    --color-orange:rgba(254, 163, 1, 1);
+    --color-black:rgba(17, 17, 17, 1);
+    --color-blue:rgba(1, 172, 253, 1);
+    --color-white:rgba(247, 247, 247, 1);
+
+    --color-grey:rgba(73, 85, 96, 1);
+    --color-lightorange:rgba(254, 163, 1, 1);
+    --color-purewhite:rgba(255, 255, 255, 1);
+    --color-pureblack:rgba(0, 0, 0, 1);
+    --color-cyan:rgba(5, 212, 223, 1);
+    --color-purple:rgba(93, 88, 239, 1);
+    --color-bluegrey:rgba(104, 162, 223, 1);
+
+    --color-btn-cyan:rgba(60, 216, 232, 1);
+    --color-btn-purple:rgba(93, 88, 240, 1);
+    --color-btn-green:rgba(149, 178, 38, 1);
+
+}
+
+html { font-size: 16px; }
+h1 { font-size: 3.815rem; }
+h2 { font-size: 3.052rem; }
+h3 { font-size: 2.441rem; }
+h4 { font-size: 1.953rem; }
+h5 { font-size: 1.563rem; }
+h6 { font-size: 1.25rem; }
+p { font-size: 1rem; }
+small { font-size: 0.8rem; }
+small span { font-size: 0.64rem; }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", serif;
+}
+
+/* shareable css */
+
+body{
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+body .container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 12px;
+    color: var(--color-purewhite);
+    background-color: var(--color-orange);
+    font-weight: 600;
+    font-size: 1.15rem;
+    line-height: 30px;
+    width: 197px;
+}
+
+button:hover{
+    outline: 2px solid var(--color-orange);
+    background-color: var(--color-white);
+    color: var(--color-orange);
+    transition: all 0.3s ease;
+}
+
+
+/* header css */
+
+
+
+/* navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.125rem 0;
+    /* border: 2px solid var(--color-grey); */
+}
+
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.navbar .logo img{
+    width: 62px;
+    flex-shrink: 0;
+}
+
+.navbar>ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    font-size: 1.25rem;
+}
+
+.nav-links a{
+    font-weight: 500;
+}
+
+.orange{
+    color: var(--color-orange);
+}
+
+.blue{
+    color: var(--color-blue);
+}
+
+.nav-item.cyan{
+    color: var(--color-cyan);
+}
+
+.nav-item.purple{
+    color: var(--color-purple);
+}
+
+.nav-links a:hover{
+    font-weight: 500;
+    color: var(--color-grey);
+}
+
+
+.menu-icon{
+    display: none;
+}
+
+/* hero */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5rem 0;
+    gap: 50px 50px;
+    max-width: 100%;
+}
+
+.hero .hero-text{
+    max-width: 60%;
+}
+
+.hero .hero-text h1{
+    line-height: 61px;
+}
+
+.hero-text>*{
+    margin-bottom: 24px;
+}
+
+.hero-text h6{
+    font-weight: 400;
+}
+
+.btn-black{
+    background-color: var(--color-black);
+    color: var(--color-purewhite);
+}
+
+.btn-black:hover{
+    outline: 2px solid var(--color-black);
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.hero .hero-img{
+    max-width: 40%;
+}
+
+.hero .hero-img img{
+    width: 100%;
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 768px){
+    body .container{
+        max-width: 90%;
+    }
+
+    .navbar{
+        padding: 16px 0;
+    }
+
+    .nav-item,.logo>h4,.nav-button{
+        display: none;
+    }
+
+    .menu-icon{
+        display:block;
+    }
+
+    .navbar .logo img{
+        width: 46px;
+    }
+
+    .nav{
+        border-bottom: 1px solid var(--color-orange);
+    }
+
+   
+
+    .hero{
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .hero .hero-text{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero .hero-img{
+        max-width: 95%;
+        margin-top: 20px;
+    }
+
+    .hero .hero-text h1{
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .hero .hero-text h6{
+        font-size: .9rem;
+    }
+
+
+    .hero .hero-text button{
+        border-radius: 8px;
+        padding: 6px 24px;
+        width: auto;
+        font-weight: 700;
+        line-height: 30px;
+        font-size: 1rem;
+    }
+
+    
+}
