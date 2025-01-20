@@ -193,6 +193,9 @@ button:hover{
 /* curriculum */
 .curriculum{
     background-image: url(assets/bg.png);
+    border-image-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .curriculum .container
@@ -201,7 +204,7 @@ button:hover{
     border: 2px solid var(--color-grey);
 }
 
-.curriculum h2{
+h2{
     margin: 60px 0;
 }
 
@@ -266,6 +269,20 @@ button:hover{
 .move-icon img{
     margin: 0 5px;
 }
+
+
+/* stories */
+
+.stories{
+    background: url(assets/bg.png),linear-gradient(0deg, rgba(254, 163, 1, 0.30) 0%, rgba(255, 255, 255, 0.30) 100%);
+    border-image-repeat: no-repeat;
+}
+
+.grid-wrapper{
+    margin: 80px 0;
+}
+
+
 
 /* responsive */
 
