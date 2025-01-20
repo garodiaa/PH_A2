@@ -18,6 +18,10 @@
     --color-btn-purple:rgba(93, 88, 240, 1);
     --color-btn-green:rgba(149, 178, 38, 1);
 
+    --text-orange:rgba(240, 170, 0, 1);
+    --text-blue:rgba(100, 200, 255, 1);
+    --text-purple:rgba(135, 0, 255, 1); 
+
 }
 
 html { font-size: 16px; }
@@ -184,6 +188,84 @@ button:hover{
     width: 100%;
 }
 
+/* main */
+
+/* curriculum */
+.curriculum{
+    background-image: url(assets/bg.png);
+}
+
+.curriculum .container
+{   
+    text-align: center;
+    border: 2px solid var(--color-grey);
+}
+
+.curriculum h2{
+    margin: 60px 0;
+}
+
+.curriculum .wrapper{
+    margin: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.card{
+    border: 2px solid var(--color-grey);
+    border-radius: 19px;
+    padding: 53px 40px;
+    display: grid;
+    gap: 32px;
+    justify-items: center;
+}
+
+.card p{
+    line-height: 28px; 
+}
+
+.card a{
+    font-weight: 800;
+}
+
+.kinder{
+    background: linear-gradient(180deg, rgba(222, 245, 255, 1) 0%, rgba(255, 255, 255, 0) 40%), rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+    border: 2px solid rgba(222, 245, 255, 1) ;
+}
+
+.elementary{
+    background: linear-gradient(180deg, #FFF4DC 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+    box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+    border: 0.943px solid #FFF4DC;
+}
+
+.middle{
+    background: linear-gradient(180deg, #EEE1FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+    box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+    border: 0.943px solid #F2E8FF;
+}
+
+
+.text-blue{
+    color:var(--text-blue);
+}
+
+.text-orange{
+    color:var(--text-orange);
+}
+
+.text-purple{
+    color:var(--text-purple);
+}
+
+.move-icon{
+    margin-bottom: 60px;
+}
+.move-icon img{
+    margin: 0 5px;
+}
 
 /* responsive */
 
@@ -247,6 +329,45 @@ button:hover{
         line-height: 30px;
         font-size: 1rem;
     }
+
+
+    /* curriculum */
+    .curriculum .wrapper{
+        margin: 20px 0 40px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .curriculum h2{
+        font-size: 1.6rem ;
+        margin: 40px 0 0 0;
+    }
+
+    .card{
+        padding: 36px 28px;
+        gap: 22px;
+    }
+
+    .card h5{
+        font-size: 1.2rem;
+    }
+
+    .card p,.card a{
+        font-size: .8rem;
+        line-height: 24px;
+        border-radius: 13px;
+    }
+    .card img{
+        width: 33%;
+    }
+
+    .move-icon{
+        display: none;
+    }
+
+
 
     
 }
