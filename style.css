@@ -269,7 +269,7 @@ button:hover{
 
 /* responsive */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 994px){
     body .container{
         max-width: 90%;
     }
