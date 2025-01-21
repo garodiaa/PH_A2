@@ -40,6 +40,7 @@ small span { font-size: 0.64rem; }
     padding: 0;
     box-sizing: border-box;
     font-family: "Quicksand", serif;
+    scroll-behavior: smooth;
 }
 
 /* shareable css */
@@ -427,6 +428,10 @@ footer{
     font-weight: 500;
 }
 
+.mid-foot>a:hover{
+    color: var(--color-grey);
+}
+
 
 .right-foot{
     max-width: 30%;
@@ -435,6 +440,10 @@ footer{
 .socials{
     display: flex;
     gap: 10px;
+}
+
+.socials>a:hover{
+    transform: scale(1.05);
 }
 
 
@@ -653,6 +662,8 @@ footer{
     .mid-foot>a{
         font-size: 1rem;
     }
+
+
 
     .marquee>p{
         animation: scroll-left 10s linear infinite;
