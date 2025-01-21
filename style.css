@@ -437,6 +437,19 @@ footer{
     gap: 10px;
 }
 
+
+
+marquee{
+    font-family: "Quicksand", serif;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 5px 0;
+    color: var(--color-purewhite);
+    background-color: var(--color-black);
+    
+}
+
+
 /* responsive */
 
 @media screen and (max-width: 994px){
