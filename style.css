@@ -83,16 +83,19 @@ button:hover{
 
 /* header css */
 
+header{
+    padding-top: 20px;
+}
+
 
 
 /* navbar */
+
 
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1.125rem 0;
-    /* border: 2px solid var(--color-grey); */
 }
 
 .navbar .logo{
@@ -201,6 +204,7 @@ button:hover{
 .curriculum .container
 {   
     text-align: center;
+    padding-top: 1px;
 }
 
 h2{
@@ -277,6 +281,7 @@ h2{
 }
 
 .stories .container{
+    padding-top: 1px;
     text-align: center;
 }
 
@@ -438,6 +443,10 @@ footer{
 @media screen and (max-width: 994px){
     body .container{
         max-width: 90%;
+    }
+
+    header{
+        padding-top: 0px;
     }
 
     .navbar{
