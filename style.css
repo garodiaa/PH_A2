@@ -197,14 +197,13 @@ header{
 .curriculum{
     background-image: url(assets/bg.png);
     border-image-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
 }
 
 .curriculum .container
 {   
     text-align: center;
-    padding-top: 1px;
+    padding: 1px 0px;
 }
 
 h2{
