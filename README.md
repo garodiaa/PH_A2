@@ -1,1 +1,1 @@
-Live Preview : [click here](https://github.com/garodiaa/PH_A2)
+Live Preview : [click here](https://garodiaa.github.io/PH_A2/)
